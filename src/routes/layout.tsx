@@ -19,7 +19,9 @@ export default component$(() => {
         <a href="/">Tomás Sorgetti</a>
       </header>
 
-      <Slot />
+      <main>
+        <Slot />
+      </main>
 
       <footer>
         <p>Copyright &copy; {new Date().getFullYear()}</p>
