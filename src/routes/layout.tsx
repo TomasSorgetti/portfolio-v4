@@ -13,5 +13,17 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
-  return <Slot />;
+  return (
+    <>
+      <header>
+        <a href="/">Tomás Sorgetti</a>
+      </header>
+
+      <Slot />
+
+      <footer>
+        <p>Copyright &copy; {new Date().getFullYear()}</p>
+      </footer>
+    </>
+  );
 });
