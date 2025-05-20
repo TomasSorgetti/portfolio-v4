@@ -81,6 +81,8 @@
   --dark-gray--color: #303030;
   --primary--color: #a300f8;
   --discord--color: #5865f2;
+
+  scroll-behavior: smooth;
 }
 html {
   background-color: var(--black--color);

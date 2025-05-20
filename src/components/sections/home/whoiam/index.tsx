@@ -72,7 +72,12 @@ export default component$(() => {
               Hit me up on Discord for a quick game, a coding jam, or just to
               shoot the breeze. I’m always up for a good vibe.
             </p>
-            <MainButton href="#">Discord</MainButton>
+            <MainButton
+              href="https://discord.com/users/tomassorg456"
+              target="_blank"
+            >
+              Discord
+            </MainButton>
           </div>
         </div>
       </div>

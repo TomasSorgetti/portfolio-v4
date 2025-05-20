@@ -1,9 +1,15 @@
 .button {
   color: black;
   background-color: white;
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 10rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.45s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 var(--dark-gray--color);
+    transform: scale(1.03);
+  }
 }
