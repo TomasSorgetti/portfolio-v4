@@ -1,0 +1,46 @@
+.team {
+  text-align: center;
+  min-height: 140vh;
+  background-image: url("../../../../assets/images/team.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team {
+    justify-content: flex-start;
+    h2 {
+      font-size: 3rem;
+    }
+    .cards {
+      margin-top: 10rem;
+    }
+  }
+}

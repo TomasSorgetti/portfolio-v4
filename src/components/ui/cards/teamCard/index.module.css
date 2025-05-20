@@ -1,0 +1,19 @@
+.card {
+  backdrop-filter: blur(10px);
+  background-color: #000000c0;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  border: 1px solid var(--dark-gray--color);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  h3 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-weight: 100;
+  }
+}
