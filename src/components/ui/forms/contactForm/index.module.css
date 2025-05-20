@@ -25,6 +25,11 @@
     height: 150px;
     backdrop-filter: blur(10px);
     background-color: #000000c0;
+    font-family: Geist, sans-serif;
+  }
+  small {
+    text-align: center;
+    font-weight: 100;
   }
 }
 

@@ -8,6 +8,7 @@ export default component$(() => {
       <input type="text" name="" id="" placeholder="abc@gmail.com" />
       <textarea name="" id="" placeholder="Your message..."></textarea>
       <ContactButton>Get in touch</ContactButton>
+      <small>or send me an email to tomassorgetti456@gmail.com</small>
     </form>
   );
 });

@@ -23,6 +23,12 @@
         max-width: 600px;
         font-weight: 100;
       }
+      .socials {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
     }
     img {
       width: 100%;
@@ -52,6 +58,10 @@
         text-align: left;
         h2 {
           font-size: 3rem;
+          max-width: 400px;
+        }
+        p {
+          max-width: 440px;
         }
       }
     }
