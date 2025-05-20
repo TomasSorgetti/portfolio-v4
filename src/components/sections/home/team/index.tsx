@@ -4,24 +4,24 @@ import TeamCard from "~/components/ui/cards/teamCard";
 
 const reasonList = [
   {
-    title: "Reason 1",
+    title: "Integrated Design & Code",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "I create intuitive interfaces with Figma and build dynamic apps, ensuring seamless, visually striking user experiences.",
   },
   {
-    title: "Reason 2",
+    title: "Scalable Fullstack Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "I develop robust apps with Node.js and JavaScript frameworks, optimizing performance and delivering tailored solutions that grow with business needs.",
   },
   {
-    title: "Reason 3",
+    title: "Proactive Collaboration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "I thrive in agile teams, contributing innovative ideas and adapting quickly to deliver high-quality projects in dynamic environments.",
   },
   {
-    title: "Reason 4",
+    title: "Passion for Visual Impact",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "From CSS masks and keyframes animations to optimized sites, I craft engaging solutions that strengthen brand identity.",
   },
 ];
 

@@ -11,8 +11,9 @@ export default component$(() => {
           <span>Hi, I'm Tomás</span>
           <h1>Full Stack Developer</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-            molestias ea, excepturi recusandae debitis
+            I build scalable solutions with JavaScript frameworks, optimizing
+            load times and UX. I’m eager to join startups or SaaS teams,
+            delivering efficient code and driving growth in agile environments.
           </p>
           <MainButton href="#contact">Get in touch</MainButton>
         </div>

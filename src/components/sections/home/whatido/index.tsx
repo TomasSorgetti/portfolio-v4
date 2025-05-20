@@ -24,25 +24,25 @@ export default component$(() => {
             <li>
               <span>01.</span>
               <p>
-                A Web Designer and Full Stack Web Developer. I live for shaping
-                digital worlds that click with people and spark awe. Ready to
-                cook up something wild together?
+                I create engaging, responsive interfaces in Figma, with
+                interactive prototypes ensuring optimal user experience and
+                project clarity.
               </p>
             </li>
             <li>
               <span>02.</span>
               <p>
-                A Web Designer and Full Stack Web Developer. I live for shaping
-                digital worlds that click with people and spark awe. Ready to
-                cook up something wild together?
+                I build dynamic interfaces using React, Nextjs, Astro, Qwik,
+                delivering high-performance, accessible, and cross-platform
+                solutions.
               </p>
             </li>
             <li>
               <span>03.</span>
               <p>
-                A Web Designer and Full Stack Web Developer. I live for shaping
-                digital worlds that click with people and spark awe. Ready to
-                cook up something wild together?
+                I develop scalable servers with Node.js, integrating APIs and
+                databases for secure, customized functionality with ongoing
+                support.
               </p>
             </li>
           </ul>

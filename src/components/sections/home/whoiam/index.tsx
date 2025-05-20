@@ -18,10 +18,11 @@ export default component$(() => {
       <div class={styles.bento}>
         {/* Card 1 */}
         <div class={`${styles.card} ${styles.card1}`}>
-          <h3>Off the Grid</h3>
+          <h3>Outside the Code</h3>
           <p>
-            When I step away from screens, I’m brewing the perfect pour-over or
-            sketching random thoughts. It’s where I recharge and dream bigger.
+            When I’m not coding, I’m sipping Coca-Cola or sketching ideas that
+            ignite my creativity. These moments inspire my designs and fuel
+            innovative web solutions.
           </p>
           <div class={styles.rotativeWorldContainer}>
             <img
@@ -37,19 +38,21 @@ export default component$(() => {
 
         {/* Card 2 */}
         <div class={`${styles.card} ${styles.card2}`}>
-          <h3>What Lights Me Up</h3>
+          <h3>What Drives My Code</h3>
           <p>
-            I thrive on turning wild ideas into sleek, living solutions. Every
-            line of code and pixel I tweak is a chance to make something click.
+            I transform ideas into reality with Figma, React, and Next.js,
+            crafting fast, user-centric interfaces that solve problems and shine
+            on any device.
           </p>
         </div>
 
         {/* Card 3 */}
         <div class={`${styles.card} ${styles.card3}`}>
-          <h3>Why I Build</h3>
+          <h3>Why I Create</h3>
           <p>
-            I’m hooked on crafting things that feel effortless and spark joy.
-            Let’s shape ideas that stick with people long after they scroll.
+            I build to make the web feel seamless and engaging, using Node.js
+            and clean code to deliver scalable solutions that leave a lasting
+            impact.
           </p>
         </div>
 

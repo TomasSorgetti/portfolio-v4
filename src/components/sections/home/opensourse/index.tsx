@@ -15,7 +15,12 @@ export default component$(() => {
             masks and keyframes. This vibrant effect elevated the frontend,
             delivering a memorable user experience.
           </p>
-          <MainButton href="#">Contribution</MainButton>
+          <MainButton
+            href="https://github.com/midudev/lolalolitaland.com"
+            target="_blank"
+          >
+            Contribution
+          </MainButton>
         </div>
         <img
           src={LolaLolitaLand}
