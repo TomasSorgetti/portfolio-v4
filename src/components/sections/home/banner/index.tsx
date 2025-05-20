@@ -20,7 +20,7 @@ export default component$(() => {
       </div>
 
       <div class={styles.bg}>
-        <video src={HeroVideo} autoplay loop muted></video>
+        <video preload="auto" src={HeroVideo} autoplay loop muted></video>
       </div>
     </section>
   );
