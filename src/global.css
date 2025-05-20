@@ -74,10 +74,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
+  --black--color: #000000;
+  --light-black--color: #101010;
+  --white--color: #ffffff;
+  --primary--color: #a300f8;
+  --discord--color: #5865f2;
+}
+html {
+  background-color: var(--black--color);
+  color: var(--white--color);
+}
 body {
-  background-color: black;
-  color: white;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: Geist, sans-serif;
+}
+ul,
+ol {
+  list-style: none;
 }

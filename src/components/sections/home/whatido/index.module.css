@@ -1,0 +1,104 @@
+.whatido {
+  padding: 0 1rem;
+  transform: translateY(-1rem);
+  .card {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--light-black--color);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+
+    .imageContainer {
+      display: none;
+    }
+
+    .content {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background-color: var(--primary--color);
+        margin: 2rem 0;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        span {
+          font-size: 2rem;
+          font-weight: 100;
+        }
+        p {
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .whatido {
+    .card {
+      padding-left: 200px;
+
+      .imageContainer {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          height: 100%;
+          width: auto;
+          animation: world 8s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .whatido {
+    .card {
+      padding: 4rem 6rem 4rem 200px;
+      .content {
+        h2 {
+          font-size: 3rem;
+        }
+        .line {
+          margin: 3rem 0;
+        }
+        ul {
+          flex-direction: row;
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes world {
+  0% {
+    transform: translateX(-6rem) scale(1.2) rotateZ(0deg);
+  }
+  50% {
+    transform: translateX(-6rem) scale(1.2) rotateZ(10deg);
+  }
+  100% {
+    transform: translateX(-6rem) scale(1.2) rotateZ(0deg);
+  }
+}

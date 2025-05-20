@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
 import MainButton from "~/components/ui/buttons/main-button";
+import HeroVideo from "~/assets/videos/hero.mp4";
 
 export default component$(() => {
   return (
@@ -18,7 +19,7 @@ export default component$(() => {
       </div>
 
       <div class={styles.bg}>
-        <video src="/videos/hero.mp4" autoplay loop muted></video>
+        <video src={HeroVideo} autoplay loop muted></video>
       </div>
     </section>
   );
