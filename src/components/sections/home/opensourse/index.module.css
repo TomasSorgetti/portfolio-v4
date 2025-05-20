@@ -31,9 +31,10 @@
       align-items: center;
       span {
         font-size: 0.8rem;
-        font-weight: 100;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 2px;
+        color: #ff0695;
       }
       h2 {
         font-size: 2rem;
@@ -70,7 +71,7 @@
           font-size: 2.5rem;
         }
         p {
-          max-width: 470px;
+          max-width: 430px;
         }
       }
     }

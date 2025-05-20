@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+
+  input {
+    height: 60px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--dark-gray--color);
+    backdrop-filter: blur(10px);
+    background-color: #000000c0;
+  }
+
+  textarea {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--dark-gray--color);
+    resize: none;
+    height: 150px;
+    backdrop-filter: blur(10px);
+    background-color: #000000c0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    margin-top: 0;
+  }
+}

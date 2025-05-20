@@ -11,9 +11,9 @@ export default component$(() => {
           <span class={styles.tag}>OPEN SOURSE CONTRIBUTION</span>
           <h2>Lola Lolita Land</h2>
           <p>
-            A Web Designer and Full Stack Web Developer. I live for shaping
-            digital worlds that click with people and spark awe. Ready to cook
-            up something wild together?
+            I crafted a lively logo animation for "Lola Lolita Land" using CSS
+            masks and keyframes. This vibrant effect elevated the frontend,
+            delivering a memorable user experience.
           </p>
           <MainButton href="#">Contribution</MainButton>
         </div>

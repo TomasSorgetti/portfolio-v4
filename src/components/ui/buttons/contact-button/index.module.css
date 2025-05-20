@@ -1,0 +1,12 @@
+.button {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1rem;
+  height: 60px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  border: 1px solid var(--dark-gray--color);
+}

@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Banner from "~/components/sections/home/banner";
+import Contact from "~/components/sections/home/contact";
 import Glitch from "~/components/sections/home/glitch";
 import Opensourse from "~/components/sections/home/opensourse";
 import Team from "~/components/sections/home/team";
@@ -16,6 +17,7 @@ export default component$(() => {
       <Glitch />
       <Team />
       <Opensourse />
+      <Contact />
     </>
   );
 });

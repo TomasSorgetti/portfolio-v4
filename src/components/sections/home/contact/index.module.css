@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+
+  .wrapper {
+    position: relative;
+    .content {
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        max-width: 600px;
+        font-weight: 100;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      height: auto;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 4rem 0;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1024px;
+      padding: 4rem 0;
+
+      .content {
+        align-items: flex-start;
+        text-align: left;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+    img {
+      right: -6rem;
+    }
+  }
+}
