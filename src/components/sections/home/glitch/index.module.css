@@ -1,0 +1,55 @@
+.glitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    max-width: 500px;
+    margin: 2rem auto;
+    font-weight: 100;
+  }
+
+  a {
+    border: 1px solid var(--dark-gray--color);
+    overflow: hidden;
+    border-radius: 1rem;
+    max-width: 1024px;
+    margin: 2rem auto;
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    transition:
+      -webkit-mask-image 0.5s ease,
+      mask-image 0.5s ease;
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: scale 0.45s ease;
+    }
+
+    &:hover img {
+      scale: 1.03;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .glitch {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .glitch {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
