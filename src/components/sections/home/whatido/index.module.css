@@ -9,6 +9,7 @@
     border-radius: 1rem;
     padding: 2rem;
     position: relative;
+    border: 1px solid var(--dark-gray--color);
 
     .imageContainer {
       display: none;
@@ -64,7 +65,7 @@
         .image {
           height: 100%;
           width: auto;
-          animation: world 8s ease-in-out infinite;
+          animation: world 12s ease-in-out infinite;
         }
       }
     }
@@ -93,12 +94,12 @@
 
 @keyframes world {
   0% {
-    transform: translateX(-6rem) scale(1.2) rotateZ(0deg);
+    transform: translateX(-18rem) scale(1.2) rotateZ(0deg);
   }
   50% {
-    transform: translateX(-6rem) scale(1.2) rotateZ(10deg);
+    transform: translateX(-18rem) scale(1.2) rotateZ(8deg);
   }
   100% {
-    transform: translateX(-6rem) scale(1.2) rotateZ(0deg);
+    transform: translateX(-18rem) scale(1.2) rotateZ(0deg);
   }
 }

@@ -24,19 +24,25 @@ export default component$(() => {
             <li>
               <span>01.</span>
               <p>
-                Crafting custom websites with robust code and ongoing support
+                A Web Designer and Full Stack Web Developer. I live for shaping
+                digital worlds that click with people and spark awe. Ready to
+                cook up something wild together?
               </p>
             </li>
             <li>
               <span>02.</span>
               <p>
-                Crafting custom websites with robust code and ongoing support
+                A Web Designer and Full Stack Web Developer. I live for shaping
+                digital worlds that click with people and spark awe. Ready to
+                cook up something wild together?
               </p>
             </li>
             <li>
               <span>03.</span>
               <p>
-                Crafting custom websites with robust code and ongoing support
+                A Web Designer and Full Stack Web Developer. I live for shaping
+                digital worlds that click with people and spark awe. Ready to
+                cook up something wild together?
               </p>
             </li>
           </ul>
