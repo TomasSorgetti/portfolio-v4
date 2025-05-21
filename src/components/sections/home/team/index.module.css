@@ -1,9 +1,10 @@
 .team {
   text-align: center;
-  min-height: 140vh;
+  min-height: 150vh;
   background-image: url("../../../../assets/images/team.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,11 +37,12 @@
 @media screen and (min-width: 1024px) {
   .team {
     justify-content: flex-start;
+    margin-bottom: 4rem;
     h2 {
       font-size: 3rem;
     }
     .cards {
-      margin-top: 10rem;
+      margin-top: 3rem;
     }
   }
 }
