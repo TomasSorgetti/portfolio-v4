@@ -1,5 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import Footer from "~/layouts/footer";
 import Navbar from "~/layouts/navbar";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -22,9 +23,7 @@ export default component$(() => {
         <Slot />
       </main>
 
-      <footer>
-        <p>Copyright &copy; {new Date().getFullYear()}</p>
-      </footer>
+      <Footer />
     </>
   );
 });
