@@ -45,6 +45,13 @@
         }
         p {
           font-weight: 200;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          span {
+            font-weight: 600;
+          }
         }
       }
 

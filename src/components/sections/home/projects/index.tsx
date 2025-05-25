@@ -20,9 +20,11 @@ export default component$(() => {
           <div class={styles.cardContent}>
             <h3>Learning Spark</h3>
             <p>
-              When I’m not coding, I’m sipping Coca-Cola or sketching ideas that
-              ignite my creativity. These moments inspire my designs and fuel
-              innovative web solutions.
+              Developed a responsive landing page with React, Next.js, and
+              Tailwind CSS, integrated with an Express + MongoDB backend.
+              Deployed on AWS, improved SEO, achieved 99.9% uptime, and reduced
+              load time by 60%.{" "}
+              <span>Tech: React, Next.js, Express, MongoDB, Redis, AWS.</span>
             </p>
           </div>
           <div class={styles.imageContainer}>
@@ -46,9 +48,10 @@ export default component$(() => {
           <div class={styles.cardContent}>
             <h3>Cl industrial Supply</h3>
             <p>
-              I transform ideas into reality with Figma, React, and Next.js,
-              crafting fast, user-centric interfaces that solve problems and
-              shine on any device.
+              Developed a responsive React and Vite website with an interactive
+              catalog, optimized performance by 20%, and trained a teammate in
+              React.
+              <span>Tech: React, Vite</span>
             </p>
           </div>
           <div class={styles.imageContainer}>
@@ -72,9 +75,9 @@ export default component$(() => {
           <div class={styles.cardContent}>
             <h3>Profile Up</h3>
             <p>
-              I build to make the web feel seamless and engaging, using Node.js
-              and clean code to deliver scalable solutions that leave a lasting
-              impact.
+              Built a responsive React website for an HR psychologist with clean
+              design and fast loading.
+              <span>Tech: React</span>
             </p>
           </div>
           <div class={styles.imageContainer}>
@@ -94,8 +97,10 @@ export default component$(() => {
           <div class={styles.cardContent}>
             <h3>Crypto Exchange Platform</h3>
             <p>
-              Hit me up on Discord for a quick game, a coding jam, or just to
-              shoot the breeze. I’m always up for a good vibe.
+              Developed a responsive landing page with React and Vite,
+              incorporating multi-language and multi-theme features. Optimized
+              performance by 40% through efficient coding practices.
+              <span>Tech: React, Vite</span>
             </p>
           </div>
           <div class={styles.imageContainer}>
