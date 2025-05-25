@@ -4,7 +4,7 @@ import Glitch from "~/assets/images/glitch.png";
 
 export default component$(() => {
   return (
-    <section class={styles.glitch}>
+    <section id="glitch" class={styles.glitch}>
       <h2>Step Into Glitch Design Lab’s Glow</h2>
       <p>
         I co-founded a space where daring ideas morph into web creations that

@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 
 export default component$(() => {
   return (
-    <button class={styles.button}>
+    <button class={styles.button} type="submit">
       <Slot />
     </button>
   );

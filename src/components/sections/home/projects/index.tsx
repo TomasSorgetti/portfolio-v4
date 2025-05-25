@@ -7,7 +7,7 @@ import iEscrow from "~/assets/images/projects/iescrow.png";
 
 export default component$(() => {
   return (
-    <section class={styles.projects}>
+    <section id="mywork" class={styles.projects}>
       <h2>Projects that I made</h2>
 
       <div class={styles.bento}>

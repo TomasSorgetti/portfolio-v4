@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: #0000008f;
+  z-index: 2;
+  border-bottom: 1px solid var(--dark-gray--color);
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    .logo {
+      z-index: 2;
+      color: var(--white--color);
+      font-size: 1rem;
+      font-weight: 100;
+      text-decoration: none;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 2;
+
+      .bar {
+        width: 1.5rem;
+        height: 2px;
+        background-color: var(--white--color);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--black--color);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      transition: all 0.4s ease-in-out;
+      transform: translateX(100%);
+
+      a {
+        font-size: 1rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--white--color);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--primary--color);
+        }
+      }
+    }
+  }
+}
+
+.header.open .menu {
+  transform: translateX(0);
+}
+.header.open .hamburger {
+  position: relative;
+
+  .bar:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+  }
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .bar:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    nav {
+      padding: 1.5rem 1rem;
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .hamburger {
+        display: none;
+      }
+      .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        transform: translateX(0);
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@
     border: 1px solid var(--dark-gray--color);
     backdrop-filter: blur(10px);
     background-color: #000000c0;
+    color: white;
   }
 
   textarea {
@@ -26,6 +27,7 @@
     backdrop-filter: blur(10px);
     background-color: #000000c0;
     font-family: Geist, sans-serif;
+    color: white;
   }
   small {
     text-align: center;

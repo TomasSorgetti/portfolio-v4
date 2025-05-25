@@ -6,7 +6,7 @@ import Discord from "~/assets/images/discord.png";
 
 export default component$(() => {
   return (
-    <section class={styles.whoiam}>
+    <section id="whoiam" class={styles.whoiam}>
       <div class={styles.header}>
         <h2>Who I Am Off the Screen</h2>
         <p>
