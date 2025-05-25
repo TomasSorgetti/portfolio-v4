@@ -27,11 +27,16 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Tomás Sorgetti - Desarrollador Web - Portfolio",
+  title: "Tomás Sorgetti - Web Developer - Portfolio",
   meta: [
     {
       name: "description",
-      content: "Desarrollador Web - Tomás Sorgetti",
+      content:
+        "I build scalable solutions with JavaScript frameworks, optimizing load times and UX. I’m eager to join startups or SaaS teams, delivering efficient code and driving growth in agile environments.",
     },
+    {
+      name: "keywords",
+      content: "tomassorgetti, ux, ui, ux/ui, html, css, sass, tailwind, javascript, typescript, react, vue, node, express, nest, next, qwik, astro, web development",
+    }
   ],
 };

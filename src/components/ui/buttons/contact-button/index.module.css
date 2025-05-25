@@ -9,5 +9,9 @@
   color: black;
   background-color: white;
   border: 1px solid var(--dark-gray--color);
+  cursor: pointer;
+}
+.button.disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }

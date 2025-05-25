@@ -6,8 +6,6 @@ export const onPost: RequestHandler = async ({ request, json, env }) => {
   const email = data.get("email");
   const message = data.get("message");
 
-  console.log("POST recibido:", email, message);
-
   const apiKey = env.get("RESEND_API_KEY");
   if (!apiKey) {
     json(500, { success: false, message: "Missing API key" });
@@ -18,10 +16,17 @@ export const onPost: RequestHandler = async ({ request, json, env }) => {
 
   try {
     const emailResponse = await resend.emails.send({
-      from: "Portfolio <noreply@tomassorgetti.com.ar>",
+      from: "Tomas Sorgetti <contacto@tomassorgetti.com.ar>",
       to: "tomassorgetti456@gmail.com",
+      replyTo: String(email),
       subject: "Mensaje de contacto - Portfolio",
-      text: `Email: ${email}\nMensaje: ${message}`,
+      html: `
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Mensaje:</strong></p>
+          <p>${message}</p>
+          <hr />
+          <p>Este mensaje fue enviado desde tu portfolio.</p>
+        `,
     });
 
     json(200, {
