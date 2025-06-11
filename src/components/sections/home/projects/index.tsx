@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import LearningSpark from "~/assets/images/projects/learningspark.png";
 import Cl from "~/assets/images/projects/cl.png";
 import ProfileUp from "~/assets/images/projects/profileup.png";
-import iEscrow from "~/assets/images/projects/iescrow.png";
+import Glasstown from "~/assets/images/projects/glasstown.png";
 
 export default component$(() => {
   return (
@@ -93,27 +93,30 @@ export default component$(() => {
         </a>
 
         {/* Card 4 */}
-        <div class={`${styles.card} ${styles.card4}`}>
+        <a
+          href="https://glasstown.com.ar"
+          target="_blank"
+          class={`${styles.card} ${styles.card4}`}
+        >
           <div class={styles.cardContent}>
-            <h3>Crypto Exchange Platform</h3>
+            <h3>Glasstown</h3>
             <p>
-              Developed a responsive landing page with React and Vite,
-              incorporating multi-language and multi-theme features. Optimized
+              Developed a responsive landing page with Astro. Optimized
               performance by 40% through efficient coding practices.
-              <span>Tech: React, Vite</span>
+              <span>Tech: Astro, React</span>
             </p>
           </div>
           <div class={styles.imageContainer}>
             <img
-              src={iEscrow}
-              alt="cryptocurrency exchange platform project"
+              src={Glasstown}
+              alt="glasstown project"
               draggable={false}
               loading="lazy"
               width={783}
               height={392}
             />
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
