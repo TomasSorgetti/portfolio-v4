@@ -9,13 +9,10 @@ import Projects from "~/components/sections/home/projects";
 import Team from "~/components/sections/home/team";
 import Whatido from "~/components/sections/home/whatido";
 import Whoiam from "~/components/sections/home/whoiam";
-// import Analytics from "~/components/ui/analytics";
 
 export default component$(() => {
   return (
     <>
-      {/* <Analytics /> */}
-
       <Banner />
       <Whatido />
       <Whoiam />
