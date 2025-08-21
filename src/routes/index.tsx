@@ -9,10 +9,13 @@ import Projects from "~/components/sections/home/projects";
 import Team from "~/components/sections/home/team";
 import Whatido from "~/components/sections/home/whatido";
 import Whoiam from "~/components/sections/home/whoiam";
+// import Analytics from "~/components/ui/analytics";
 
 export default component$(() => {
   return (
     <>
+      {/* <Analytics /> */}
+
       <Banner />
       <Whatido />
       <Whoiam />
@@ -36,7 +39,8 @@ export const head: DocumentHead = {
     },
     {
       name: "keywords",
-      content: "tomassorgetti, ux, ui, ux/ui, html, css, sass, tailwind, javascript, typescript, react, vue, node, express, nest, next, qwik, astro, web development",
-    }
+      content:
+        "tomassorgetti, ux, ui, ux/ui, html, css, sass, tailwind, javascript, typescript, react, vue, node, express, nest, next, qwik, astro, web development",
+    },
   ],
 };

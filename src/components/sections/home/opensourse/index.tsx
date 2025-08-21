@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
 import MainButton from "~/components/ui/buttons/main-button";
 import LolaLolitaLand from "~/assets/images/lolalolita.png";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
@@ -15,12 +16,18 @@ export default component$(() => {
             masks and keyframes. This vibrant effect elevated the frontend,
             delivering a memorable user experience.
           </p>
-          <MainButton
-            href="https://github.com/midudev/lolalolitaland.com"
-            target="_blank"
+          <div
+            onClick$={() => {
+              track("main-click", { location: "home" });
+            }}
           >
-            Contribution
-          </MainButton>
+            <MainButton
+              href="https://github.com/midudev/lolalolitaland.com"
+              target="_blank"
+            >
+              Contribution
+            </MainButton>
+          </div>
         </div>
         <img
           src={LolaLolitaLand}

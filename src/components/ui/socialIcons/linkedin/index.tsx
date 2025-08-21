@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
@@ -7,6 +8,9 @@ export default component$(() => {
       class={styles.button}
       href="https://www.linkedin.com/in/tomas-sorgetti/"
       target="_blank"
+      onClick$={() => {
+        track("sociallinkedin-click", { location: "home" });
+      }}
     >
       <svg
         width="40"

@@ -1,9 +1,17 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
-    <a class={styles.button} href="https://wa.me/5411936323780" target="_blank">
+    <a
+      class={styles.button}
+      href="https://wa.me/5411936323780"
+      target="_blank"
+      onClick$={() => {
+        track("socialwhatsapp-click", { location: "home" });
+      }}
+    >
       <svg
         width="40"
         height="41"

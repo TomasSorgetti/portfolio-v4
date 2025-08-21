@@ -4,6 +4,7 @@ import LearningSpark from "~/assets/images/projects/learningspark.png";
 import Cl from "~/assets/images/projects/cl.png";
 import ProfileUp from "~/assets/images/projects/profileup.png";
 import Glasstown from "~/assets/images/projects/glasstown.png";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
@@ -16,6 +17,9 @@ export default component$(() => {
           href="https://learning-spark.com/"
           target="_blank"
           class={`${styles.card} ${styles.card1}`}
+          onClick$={() => {
+            track("learningspark-click", { location: "home" });
+          }}
         >
           <div class={styles.cardContent}>
             <h3>Learning Spark</h3>
@@ -44,6 +48,9 @@ export default component$(() => {
           href="https://clindustrialsupply.com.ar/home"
           target="_blank"
           class={`${styles.card} ${styles.card2}`}
+          onClick$={() => {
+            track("clindustrialsupply-click", { location: "home" });
+          }}
         >
           <div class={styles.cardContent}>
             <h3>Cl industrial Supply</h3>
@@ -71,6 +78,9 @@ export default component$(() => {
           href="https://profileupmm.com.ar"
           target="_blank"
           class={`${styles.card} ${styles.card3}`}
+          onClick$={() => {
+            track("profileup-click", { location: "home" });
+          }}
         >
           <div class={styles.cardContent}>
             <h3>Profile Up</h3>
@@ -97,6 +107,9 @@ export default component$(() => {
           href="https://glasstown.com.ar"
           target="_blank"
           class={`${styles.card} ${styles.card4}`}
+          onClick$={() => {
+            track("glasstown-click", { location: "home" });
+          }}
         >
           <div class={styles.cardContent}>
             <h3>Glasstown</h3>

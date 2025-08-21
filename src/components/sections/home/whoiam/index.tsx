@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import MainButton from "~/components/ui/buttons/main-button";
 import RotativeWorld from "~/assets/images/rotative_world.png";
 import Discord from "~/assets/images/discord.png";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
@@ -72,12 +73,18 @@ export default component$(() => {
               Hit me up on Discord for a quick game, a coding jam, or just to
               shoot the breeze. I’m always up for a good vibe.
             </p>
-            <MainButton
-              href="https://discord.com/users/tomassorg456"
-              target="_blank"
+            <div
+              onClick$={() => {
+                track("discord-click", { location: "home" });
+              }}
             >
-              Discord
-            </MainButton>
+              <MainButton
+                href="https://discord.com/users/tomassorg456"
+                target="_blank"
+              >
+                Discord
+              </MainButton>
+            </div>
           </div>
         </div>
       </div>

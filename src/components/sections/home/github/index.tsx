@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
 import MainButton from "~/components/ui/buttons/main-button";
 import GithubImg from "~/assets/images/github.png";
+import { track } from "@vercel/analytics";
 
 export default component$(() => {
   return (
@@ -13,9 +14,15 @@ export default component$(() => {
             Check my GitHub to explore projects built with React, Node.js, and
             CSS animations, designed for fast and engaging user experiences.
           </p>
-          <MainButton href="https://github.com/TomasSorgetti" target="_blank">
-            GitHub
-          </MainButton>
+          <div
+            onClick$={() => {
+              track("github-click", { location: "home" });
+            }}
+          >
+            <MainButton href="https://github.com/TomasSorgetti" target="_blank">
+              GitHub
+            </MainButton>
+          </div>
         </div>
 
         <img
