@@ -3,8 +3,8 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import Banner from "~/components/sections/home/banner";
 import Contact from "~/components/sections/home/contact";
 import Github from "~/components/sections/home/github";
-import Glitch from "~/components/sections/home/glitch";
-import Opensourse from "~/components/sections/home/opensourse";
+// import Glitch from "~/components/sections/home/glitch";
+// import Opensourse from "~/components/sections/home/opensourse";
 import Projects from "~/components/sections/home/projects";
 import Team from "~/components/sections/home/team";
 import Whatido from "~/components/sections/home/whatido";
@@ -16,10 +16,10 @@ export default component$(() => {
       <Banner />
       <Whatido />
       <Whoiam />
-      <Glitch />
+      {/* <Glitch /> */}
       <Projects />
       <Team />
-      <Opensourse />
+      {/* <Opensourse /> */}
       <Github />
       <Contact />
     </>

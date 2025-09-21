@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./index.module.css";
 import LearningSpark from "~/assets/images/projects/learningspark.png";
-import Cl from "~/assets/images/projects/cl.png";
-import ProfileUp from "~/assets/images/projects/profileup.png";
-import Glasstown from "~/assets/images/projects/glasstown.png";
+import Gooster from "~/assets/images/projects/gooster.webp";
+import Proterline from "~/assets/images/projects/proterline.webp";
+import SieteVidas from "~/assets/images/projects/siete-vidas.webp";
 import { track } from "@vercel/analytics";
 
 export default component$(() => {
@@ -14,11 +14,109 @@ export default component$(() => {
       <div class={styles.bento}>
         {/* Card 1 */}
         <a
-          href="https://learning-spark.com/"
+          href="https://proterline.com.ar"
           target="_blank"
           class={`${styles.card} ${styles.card1}`}
           onClick$={() => {
             track("learningspark-click", { location: "home" });
+          }}
+        >
+          <div class={styles.cardContent}>
+            <h3>Proterline</h3>
+            <p>
+              Developed a website frontend from a Figma design, creating a
+              responsive interface with dynamic product display. Worked
+              independently on GitHub, optimizing performance, accessibility,
+              and SEO, achieving perfect Lighthouse scores (100/100).
+              <span>
+                Tech: TypeScript, Astro, React, Tailwind, API integration, Web
+                Performance
+              </span>
+            </p>
+          </div>
+          <div class={styles.imageContainer}>
+            <img
+              src={Proterline}
+              alt="proterline project"
+              draggable={false}
+              loading="lazy"
+              width={783}
+              height={392}
+            />
+          </div>
+        </a>
+
+        {/* Card 2 */}
+        <a
+          href="https://7vidas.online"
+          target="_blank"
+          class={`${styles.card} ${styles.card2}`}
+          onClick$={() => {
+            track("clindustrialsupply-click", { location: "home" });
+          }}
+        >
+          <div class={styles.cardContent}>
+            <h3>Siete Vidas</h3>
+            <p>
+              Developed a website frontend for cat nutrition from a Figma
+              design, with a responsive interface and dynamic products,
+              optimizing performance, accessibility, and SEO, achieving perfect
+              Lighthouse scores.
+              <span>
+                Tech: TypeScript, Astro, Tailwind, API integration, Web
+                Performance
+              </span>
+            </p>
+          </div>
+          <div class={styles.imageContainer}>
+            <img
+              src={SieteVidas}
+              alt="siete vidas project"
+              draggable={false}
+              loading="lazy"
+              width={535}
+              height={446}
+            />
+          </div>
+        </a>
+
+        {/* Card 3 */}
+        <a
+          href="https://gooster.com.ar"
+          target="_blank"
+          class={`${styles.card} ${styles.card3}`}
+          onClick$={() => {
+            track("profileup-click", { location: "home" });
+          }}
+        >
+          <div class={styles.cardContent}>
+            <h3>Gooster</h3>
+            <p>
+              Optimized a React-based website, enhancing performance,
+              accessibility, and technical SEO. Improved code, images, and
+              styles, achieving perfect Lighthouse scores.
+              <span>Tech: React, Vite, Tailwind, Web Performance</span>
+            </p>
+          </div>
+          <div class={styles.imageContainer}>
+            <img
+              src={Gooster}
+              alt="Profile up project"
+              draggable={false}
+              loading="lazy"
+              width={481}
+              height={392}
+            />
+          </div>
+        </a>
+
+        {/* Card 4 */}
+        <a
+          href="https://learning-spark.com/"
+          target="_blank"
+          class={`${styles.card} ${styles.card4}`}
+          onClick$={() => {
+            track("glasstown-click", { location: "home" });
           }}
         >
           <div class={styles.cardContent}>
@@ -35,94 +133,6 @@ export default component$(() => {
             <img
               src={LearningSpark}
               alt="learning spark project"
-              draggable={false}
-              loading="lazy"
-              width={783}
-              height={392}
-            />
-          </div>
-        </a>
-
-        {/* Card 2 */}
-        <a
-          href="https://clindustrialsupply.com.ar/home"
-          target="_blank"
-          class={`${styles.card} ${styles.card2}`}
-          onClick$={() => {
-            track("clindustrialsupply-click", { location: "home" });
-          }}
-        >
-          <div class={styles.cardContent}>
-            <h3>Cl industrial Supply</h3>
-            <p>
-              Developed a responsive React and Vite website with an interactive
-              catalog, optimized performance by 20%, and trained a teammate in
-              React.
-              <span>Tech: React, Vite</span>
-            </p>
-          </div>
-          <div class={styles.imageContainer}>
-            <img
-              src={Cl}
-              alt="cl industrial supply project"
-              draggable={false}
-              loading="lazy"
-              width={535}
-              height={446}
-            />
-          </div>
-        </a>
-
-        {/* Card 3 */}
-        <a
-          href="https://profileupmm.com.ar"
-          target="_blank"
-          class={`${styles.card} ${styles.card3}`}
-          onClick$={() => {
-            track("profileup-click", { location: "home" });
-          }}
-        >
-          <div class={styles.cardContent}>
-            <h3>Profile Up</h3>
-            <p>
-              Built a responsive React website for an HR psychologist with clean
-              design and fast loading.
-              <span>Tech: React</span>
-            </p>
-          </div>
-          <div class={styles.imageContainer}>
-            <img
-              src={ProfileUp}
-              alt="Profile up project"
-              draggable={false}
-              loading="lazy"
-              width={481}
-              height={392}
-            />
-          </div>
-        </a>
-
-        {/* Card 4 */}
-        <a
-          href="https://glasstown.com.ar"
-          target="_blank"
-          class={`${styles.card} ${styles.card4}`}
-          onClick$={() => {
-            track("glasstown-click", { location: "home" });
-          }}
-        >
-          <div class={styles.cardContent}>
-            <h3>Glasstown</h3>
-            <p>
-              Developed a responsive landing page with Astro. Optimized
-              performance by 40% through efficient coding practices.
-              <span>Tech: Astro, React</span>
-            </p>
-          </div>
-          <div class={styles.imageContainer}>
-            <img
-              src={Glasstown}
-              alt="glasstown project"
               draggable={false}
               loading="lazy"
               width={783}

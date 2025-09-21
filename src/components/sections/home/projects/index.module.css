@@ -77,9 +77,6 @@
         transform: scale(1.1);
       }
     }
-    .card4 {
-      cursor: not-allowed;
-    }
   }
 }
 
@@ -136,6 +133,7 @@
         &:hover {
           .cardContent {
             backdrop-filter: blur(10px);
+            background-color: #000000b6;
             h3,
             p {
               opacity: 1;
